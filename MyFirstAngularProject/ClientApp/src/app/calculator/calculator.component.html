@@ -1,0 +1,47 @@
+<h1>Simple Calculator</h1>
+<br />
+<div class="calculator-section">
+    <div class="row input-field">
+        <div class="col-sm-2">
+            <label>First Number: </label>
+        </div>
+        <div class="col-sm-6">
+            <input [(ngModel)]="firstNumber" type="text" placeholder="First Number">
+        </div>
+    </div>
+    <br />
+    <div class="row input-field">
+        <div class="col-sm-2">
+            <label>Second Number: </label>
+        </div>
+        <div class="col-sm-6">
+            <input [(ngModel)]="secondNumber" type="text" placeholder="Second Number">
+        </div>
+    </div>
+    <br />
+    <div class="row input-field">
+        <div class="col-sm-2">
+            <label>Result:  </label>
+        </div>
+        <div class="col-sm-2">
+            <label>{{result}}</label>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <br />
+    <div class="row buttons">
+        <div>
+            <button type="button" (click)="Addition()" class="btn btn-primary">Add</button>
+        </div>
+        <div>
+            <button type="button" (click)="Subtraction()" class="btn btn-primary">Subtract</button>
+        </div>
+        <div>
+            <button type="button" (click)="Multiplication()" class="btn btn-primary">Multiply</button>
+        </div>
+        <div>
+            <button type="button" (click)="Division()" class="btn btn-primary">Divide</button>
+        </div>
+    </div>
+</div>
